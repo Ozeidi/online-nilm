@@ -60,7 +60,7 @@ def experiment(key_name, start_e, end_e):
 
 	# Open train sets
 	X_train = np.load("dataset/trainsets/X-{}.npy".format(key_name))
-	print ('Omar The shape for X_train = '.format(X_train.shape))
+	print ('Omar The shape for X_train ={} '.format(X_train.shape))
 	X_train = normalize(X_train, mamax, mean, std)
 	y_train = np.load("dataset/trainsets/Y-{}.npy".format(key_name))
 	y_train = normalize(y_train, memax, mean, std)
