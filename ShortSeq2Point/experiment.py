@@ -63,6 +63,7 @@ def experiment(key_name, start_e, end_e):
 	print ('Omar The shape for X_train ={} '.format(X_train.shape))
 	X_train = normalize(X_train, mamax, mean, std)
 	y_train = np.load("dataset/trainsets/Y-{}.npy".format(key_name))
+	print ('Omar The shape for Y_train ={} '.format(y_train.shape))
 	y_train = normalize(y_train, memax, mean, std)
 	model = create_model(input_window)
 
