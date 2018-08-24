@@ -24,6 +24,7 @@ def create_model(input_window):
 	model.add(Dense(1, activation='linear'))
 
 	model.compile(loss='mse', optimizer='adam')
-	plot_model(model, to_file='model.png', show_shapes=True)
+	model.summary()
+	#plot_model(model, to_file='model.png', show_shapes=True)
 
 	return model
